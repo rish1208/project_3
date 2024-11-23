@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 14, 2024, 12:13:48 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping package="in.co.rays.project_3.dto">
+
+    <class name="LoneDTO" table="ST_LONE">
+    <id name="id" type="java.lang.Long">
+			<column name="ID"></column>
+			<generator class="increment"></generator>
+		</id>
+        <property name="loneStartDate" type="java.util.Date">
+            <column name="LONESTARTDATE" />
+        </property>
+        <property name="interestRate" type="java.lang.Integer">
+            <column name="INTERESTRATE" />
+        </property>
+        <property name="customerId" type="java.lang.String">
+            <column name="CUSTOMERID" />
+        </property>
+        <property name="mobile" type="java.lang.String">
+            <column name="MOBILE" />
+        </property>
+        <property name="loneAmount" type="java.lang.Integer">
+            <column name="LONEAMOUNT" />
+        </property>
+    </class>
+</hibernate-mapping>
